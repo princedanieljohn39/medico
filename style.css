@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    background-color: black;
 }
 
 @font-face {
@@ -10,6 +11,13 @@
 
 .topnav{
     display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.icon{
+    display: none;
 }
 
 .logo img {
@@ -20,11 +28,20 @@
     display: flex;
 }
 
-a {
+#myLinks a {
     font-family: "gilroy-m";
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-family: poppins;
     text-decoration: none;
+    color: white;
+}
+
+#myLinks a:hover{
+    background-color: rgb(10, 70, 235);
+    border-radius: 50px;
 }
 
 @media screen and (max-width: 1150px) {
@@ -41,13 +58,14 @@ a {
     .topnav #myLinks {
         display: none;
         position: absolute;
-        right: 65px;
+        right: 80px;
         top: 10px;
-        background-color: black;
+        border: solid rgb(64, 101, 183) 1px;
+        background-color: rgb(243, 243, 243);
     }
 
     .topnav a {
-        color: white;
+        color: rgb(64, 101, 183);
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
@@ -55,19 +73,18 @@ a {
     }
 
     .topnav a.icon {
-        background: rgb(255, 255, 255);
         display: block;
         position: absolute;
-        right: 0;
-        top: 10px;
+        right: 15px;
+        top: 0px;
     }
 
     .icon img{
-        width: 30px;
+        width: 50px;
     }
 
     .topnav a:hover {
-        background-color: #ddd;
+        background-color: #000000;
         color: black;
     }
 }
